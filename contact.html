@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Amine_Lux</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const formData = new FormData(document.getElementById('contact-form'));
+            fetch('save.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('form-message').innerHTML = data;
+            })
+            .catch(error => {
+                document.getElementById('form-message').innerHTML = "Erreur lors de l'envoi du formulaire";
+            });
+        }</script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Amine_Lux</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="a_propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="messagec">Message :</label>
+                <textarea id="messagec" name="messagec" required></textarea>
+                <div style="display: flex; justify-content: flex-start; margin-top: 10px;">
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Réinitialiser</button>
+                </div>
+            </form>
+            <center><a href="index.html" class="cta-button">En savoir plus</a></center>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Amine_Lux</p>
+    </footer>
+    <button id="back-to-top">↑</button>
+</body>
+</html>
