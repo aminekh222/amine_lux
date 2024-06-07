@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #45a049;
+    padding-bottom: 10px;
+}
+.service {
+    background-color: #dadada;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.service h3 {
+    color: #45a049;
+}
+.service p {
+    color: #000;
+}
+.intro {
+    text-align: center;
+}
+.intro img {
+    max-width: 30%;
+    height: auto;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.cta-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#contact-form input, #contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+#contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+}
+#contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+#contact-form button[type="submit"]:hover {
+    background-color:white;
+    color: #4CAF50;
+}
+#contact-form button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    margin-left: 10px;
+}
+#contact-form button[type="reset"]:hover {
+    background-color: white;
+    color: #f44336;
+}
+#form-message {
+    margin-top: 10px;
+    color: red;
+}
+button#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #06bc6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button#back-to-top:hover {
+    background-color: #06bc6b;
+}
+.cta-button:hover {
+    background-color: #06bc6b;
+    transform: scale(1.05);
+}
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #06bc6b;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+#contact-form label {
+    margin-top: 10px;
+}
+#contact-form input, #contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#form-message {
+    margin-top: 10px;
+    color: red;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh; 
+}
+.center-content section {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #dadada;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
